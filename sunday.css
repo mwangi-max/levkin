@@ -4,6 +4,7 @@
  background:lightgrey;
  font-family:Verdana, Geneva, Tahoma, sans-serif;
  text-align:center;
+ box-sizing:border-box;
 
 }
 h1, h2, h4, h5, h6{
@@ -26,7 +27,7 @@ img{
 }
 
 #section-a .background-image{
- background:url('./IMAGES/wedding2.jpg');
+ background:url('./IMAGES/wedding2.jpg'); 
  position:absolute;
  height:400px;
  width:100%;
@@ -81,11 +82,65 @@ justify-content:space-between;
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  font-style:italic;
 }
-@media(min-width:700px){
-  /* body{
+@media(max-width:899px){
+  body{
+    height:100vh;
+    width:100vw;
+  }
+  #section-a{
+    height:400px;
+    width:100%;
+    position:relative;
+    background-color:black;
+  }
+  #section-a .background-image{
+    background: url('./IMAGES/wedding2.jpg');
+    position:absolute;
+    height:400px;
+    width:100%;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:1;
+  } 
+  #section-a .background-image{
+    opacity:0.4;
+  }
+  .content-wrap{
+    height:400px;
+    
+  }
+  .content-wrap p{
+    text-align:center;
+    font-size:15px;
+    margin-top:210px;
+    padding:0px 25px 0 20px;
+    z-index:1;
+    background:none;
+    color:black;
+    line-height: 1.5rem;
+  }
+  .content-wrap h1{
+    transform:translateX(-200px);
+    font-size:2.5rem;
+  }
+  img{
+    height:30rem;
+    width:70%;
+    border-radius:5px;
+    margin: 5% 15%;
+  }
+  #footer{
+    margin-top:20px;
+  }
+
+}
+@media(min-width:900px){
+  body{
     height: 100vh;
     width:100vw;
-  } */
+    
+  } 
  .grid{
    display:grid;
    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
