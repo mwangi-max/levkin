@@ -121,7 +121,7 @@ justify-content:space-between;
     line-height: 1.5rem;
   }
   .content-wrap h1{
-    transform:translateX(-200px);
+    text-align:center;
     font-size:2.5rem;
   }
   img{
